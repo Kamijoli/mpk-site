@@ -44,16 +44,21 @@ function SpecTable({ specs }) {
     supports: "Опоры",
   };
 
-  return (
-    <ul className="specs">
-      {entries.map(([k, v]) => (
-        <li key={k}>
-          <span className="specKey">{labels[k] ?? k}</span>
-          <span className="specVal">{String(v)}</span>
-        </li>
-      ))}
-    </ul>
-  );
+return (
+  <div className="specTable">
+    {entries.map(([k, v]) => (
+      <div className="specRow" key={k}>
+        <div className="specName">
+          {labels[k] ?? k}
+        </div>
+
+        <div className="specValue">
+          {String(v)}
+        </div>
+      </div>
+    ))}
+  </div>
+);
 }
 
 function WorkflowList({ items }) {

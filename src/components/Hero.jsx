@@ -23,26 +23,56 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="heroRight">
-          <div className="heroCard heroCardAccent">
-            <div className="heroCardLabel">Основное направление</div>
-            <h3 className="heroCardTitle">Автоматические мойки</h3>
-            <p className="cardText">
-              Оборудование для мойки деталей двигателя, агрегатов и промышленных узлов.
-            </p>
-          </div>
+        
+<div className="heroRight">
+  <div className="heroBenefits">
 
-          <div className="heroMiniStats">
-            <div className="heroStat">
-              <span className="heroStatNum">6+</span>
-              <span className="heroStatText">моделей моек</span>
-            </div>
-            <div className="heroStat">
-              <span className="heroStatNum">130 л</span>
-              <span className="heroStatText">ультразвуковая ванна</span>
-            </div>
-          </div>
-        </div>
+    <div className="heroBenefit">
+      <span className="heroBenefitIcon">
+        <img src="/images/coins.png" alt="Стоимость" />
+      </span>
+
+      <div>
+        <h3>Стоимость</h3>
+        <p>Самая доступная цена на рынке</p>
+      </div>
+    </div>
+
+    <div className="heroBenefit">
+      <span className="heroBenefitIcon">
+        <img src="/images/shield.png" alt="Гарантия" />
+      </span>
+
+      <div>
+        <h3>Гарантия</h3>
+        <p>Качество продукции подтверждено</p>
+      </div>
+    </div>
+
+    <div className="heroBenefit">
+      <span className="heroBenefitIcon">
+        <img src="/images/delivery.png" alt="Доставка" />
+      </span>
+
+      <div>
+        <h3>Доставка</h3>
+        <p>По всей Российской Федерации</p>
+      </div>
+    </div>
+
+    <div className="heroBenefit">
+      <span className="heroBenefitIcon">
+        <img src="/images/sertificat.png" alt="Сертификат" />
+      </span>
+
+      <div>
+        <h3>Сертификат</h3>
+        <p>Соответствие товара требованиям</p>
+      </div>
+    </div>
+
+  </div>
+</div>
       </div>
     </section>
   );

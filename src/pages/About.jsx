@@ -1,16 +1,41 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import ImageLightbox from "../components/ImageLightbox";
+
+const productionImages = [
+  "/images/production-1.jpg",
+  "/images/production-2.jpg",
+  "/images/production-3.jpg",
+];
 
 export default function About() {
   const [open, setOpen] = useState(false);
+  const [galleryOpen, setGalleryOpen] = useState(false);
+  const [galleryIndex, setGalleryIndex] = useState(0);
+
+  function openGallery(index) {
+    setGalleryIndex(index);
+    setGalleryOpen(true);
+  }
+
+  function prevGalleryImage() {
+    setGalleryIndex((i) => (i - 1 + productionImages.length) % productionImages.length);
+  }
+
+  function nextGalleryImage() {
+    setGalleryIndex((i) => (i + 1) % productionImages.length);
+  }
 
   return (
     <>
-      <section className="pageSection">
-        <div className="aboutHero compact">
-          <div className="aboutMain">
+      <section className="pageSection aboutPage">
+        <div className="aboutTop">
+          <div className="aboutContent">
             <div className="sectionEyebrow">О компании</div>
-            <h2 className="pageTitle">МПК «Миасская производственная компания»</h2>
+
+            <h2 className="pageTitle">
+              МПК «Миасская производственная компания»
+            </h2>
 
             <p className="aboutText">
               МПК «Миасская производственная компания», основанная в 2022 году,
@@ -24,6 +49,30 @@ export default function About() {
               двигателя, мойки для лотков и тары, стенды для опрессовки ГБЦ,
               вибростолы, галтовочные барабаны, проверочные ванны для колёс.
             </p>
+
+            <div className="productionStrip">
+              <div className="sectionEyebrow">Производство</div>
+
+              <div className="productionGallery">
+                {productionImages.map((img, index) => (
+                  <button
+                    className="productionPhoto"
+                    key={img}
+                    type="button"
+                    onClick={() => openGallery(index)}
+                    aria-label={`Открыть фото производства ${index + 1}`}
+                  >
+                    <img
+                      src={img}
+                      alt={`Производство ${index + 1}`}
+                      onError={(e) => {
+                        e.currentTarget.src = "/images/placeholder.png";
+                      }}
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
           </div>
 
           <button
@@ -40,6 +89,7 @@ export default function About() {
                 e.currentTarget.src = "/images/placeholder.png";
               }}
             />
+
             <div className="aboutDocOverlay">
               <span className="aboutDocBadge">Документ</span>
             </div>
@@ -59,8 +109,8 @@ export default function About() {
               <div className="aboutPoint">
                 <h4>Универсальность применения</h4>
                 <p>
-                  Для мойки различных типов деталей и агрегатов, включая металлические
-                  и пластиковые изделия, например пластиковую тару.
+                  Для мойки различных типов деталей и агрегатов, включая
+                  металлические и пластиковые изделия, например пластиковую тару.
                 </p>
               </div>
 
@@ -77,8 +127,8 @@ export default function About() {
               <div className="aboutPoint">
                 <h4>Удобство обслуживания</h4>
                 <p>
-                  Продуманная конструкция упрощает процесс технического обслуживания
-                  и ремонта.
+                  Продуманная конструкция упрощает процесс технического
+                  обслуживания и ремонта.
                 </p>
               </div>
             </div>
@@ -98,7 +148,7 @@ export default function About() {
             </p>
 
             <div className="aboutActions">
-              <a className="btnPrimary" href="tel:+76990348003">
+              <a className="btnPrimary" href="tel:+79150612211">
                 Позвонить
               </a>
 
@@ -133,6 +183,16 @@ export default function About() {
           </div>
         </div>
       ) : null}
+
+      <ImageLightbox
+        open={galleryOpen}
+        images={productionImages}
+        index={galleryIndex}
+        alt="Фотографии производства МПК"
+        onClose={() => setGalleryOpen(false)}
+        onPrev={prevGalleryImage}
+        onNext={nextGalleryImage}
+      />
     </>
   );
 }

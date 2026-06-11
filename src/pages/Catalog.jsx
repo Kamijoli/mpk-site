@@ -1,4 +1,5 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { categories } from "../data/categories";
 import { products } from "../data/products";
 import CategoryCard from "../components/CategoryCard";
@@ -7,7 +8,15 @@ import ProductCard from "../components/ProductCard";
 export default function Catalog() {
   const [q, setQ] = useState("");
   const [cat, setCat] = useState("all");
+  const [searchParams] = useSearchParams();
 
+  useEffect(() => {
+    const categoryFromUrl = searchParams.get("category");
+
+    if (categoryFromUrl) {
+      setCat(categoryFromUrl);
+   }
+}, [searchParams]);
   const filtered = useMemo(() => {
     const query = q.trim().toLowerCase();
     return products.filter((p) => {

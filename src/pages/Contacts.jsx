@@ -69,19 +69,24 @@ export default function Contacts() {
 
           <div className="contactList">
             <a className="contactItem" href="tel:+76990348003">
-              <span className="contactLabel">Телефон</span>
-              <span className="contactValue">+7 699 034-8003</span>
+              <span className="contactLabels">Сизенёв Алексей Евгеньевич</span>
+              <span className="contactLabel">Отдел продаж / работа с клиентами</span>
+              <span className="contactValue">+7 915 06 122 11</span>
             </a>
 
+          <div className="contactList">
+            <a className="contactItem" href="tel:+76990348003">
+              <span className="contactLabels">Бойко Андрей Сергеевич</span>
+              <span className="contactLabel">Руководитель производства</span>
+              <span className="contactValue">+7 951 447 20 47</span>
+            </a>
+          </div>
             <a className="contactItem" href="mailto:info@mpk.ru">
               <span className="contactLabel">E-mail</span>
-              <span className="contactValue">info@mpk.ru</span>
+              <span className="contactValue">mpk-pro@yandex.ru</span>
             </a>
 
-            <div className="contactItem">
-              <span className="contactLabel">Время работы</span>
-              <span className="contactValue">Пн–Пт 09:00–18:00</span>
-            </div>
+            
           </div>
         </div>
 

@@ -1,58 +1,76 @@
 import { Link } from "react-router-dom";
-import { products } from "../data/products";
-import { categories } from "../data/categories";
-
-const featuredIds = ["am600", "am800", "ultra130", "chem-01"];
-const featured = featuredIds
-  .map((id) => products.find((p) => p.id === id))
-  .filter(Boolean);
 
 export default function Products() {
-  function getCategoryTitle(categoryId) {
-    return categories.find((c) => c.id === categoryId)?.title ?? "";
-  }
-
   return (
-    <section className="products">
+    <section className="products productsCategories">
       <div className="productsTop">
         <div className="productsIntro">
           <div className="sectionEyebrow">Каталог продукции</div>
-          <h2 className="productsTitle">Оборудование и химия для промышленной очистки</h2>
-          <p className="productsLead">
-            Подберите автоматические мойки, ультразвуковые ванны и моющие составы
-            под задачи производства, сервиса и технического обслуживания.
-          </p>
-        </div>
 
-        <div className="productsSide">
-          <Link className="productsLink" to="/catalog">
-            Перейти в каталог
-          </Link>
+          <h2 className="productsTitle">
+            Выберите тип оборудования
+          </h2>
+
+          
         </div>
       </div>
 
-      <div className="cards">
-        {featured.map((it) => (
-          <article className="card cardPremium" key={it.id}>
-            <div className="cardImgWrap">
-              <div className="cardImgInner">
-                <img className="cardImg" src={it.img} alt={it.title} />
-              </div>
-            </div>
+      <div className="homeCategoryGrid">
+        <Link
+          className="homeCategoryCard"
+          to="/catalog?category=washers"
+        >
+          <div className="homeCategoryContent">
+            <span className="homeCategoryLabel">
+              Категория
+            </span>
 
-            <div className="cardBody">
-              <div>
-                <div className="cardMeta">{getCategoryTitle(it.categoryId)}</div>
-                <h3 className="cardH">{it.title}</h3>
-                <p className="cardP">{it.short}</p>
-              </div>
+            <h3>Автоматические мойки</h3>
 
-              <Link className="btnGhost" to={`/product/${it.id}`}>
-                Подробнее
-              </Link>
-            </div>
-          </article>
-        ))}
+            <p>
+              Оборудование для мойки деталей двигателя,
+              агрегатов и промышленных узлов.
+            </p>
+          </div>
+
+          <img
+            className="homeCategoryImage"
+            src="/images/am800.png"
+            alt="Автоматическая мойка"
+          />
+
+          <span className="homeCategoryBtn">
+            Смотреть
+          </span>
+        </Link>
+
+        <Link
+          className="homeCategoryCard"
+          to="/catalog?category=ultrasonic"
+        >
+          <div className="homeCategoryContent">
+            <span className="homeCategoryLabel">
+              Категория
+            </span>
+
+            <h3>Ультразвуковые мойки</h3>
+
+            <p>
+              Ванны для глубокой очистки деталей,
+              узлов и труднодоступных поверхностей.
+            </p>
+          </div>
+
+          <img
+            className="homeCategoryImage"
+            src="/images/ultra130.png"
+            alt="Ультразвуковая мойка"
+          />
+
+          <span className="homeCategoryBtn">
+            Смотреть
+          </span>
+        </Link>
       </div>
     </section>
   );
