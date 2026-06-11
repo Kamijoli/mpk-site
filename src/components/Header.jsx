@@ -22,7 +22,7 @@ export default function Header() {
         <span className="phoneIcon">📞</span>
         <span className="phoneText">
           <span className="phoneTop">ПОЗВОНИТЬ</span>
-          <span className="phoneNum">+7 (915) 061 22 1</span>
+          <span className="phoneNum">+7 (915) 061 22 11</span>
         </span>
       </a>
     </header>

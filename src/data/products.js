@@ -117,7 +117,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM700",
     short: "Корзина Ø700 мм, увеличенная высота камеры и бак 60 л.",
-    price: "Цена: 140 т.р.",
+    price: "Цена: 170 т.р.",
     img: "/images/am700.png",
     images: ["/images/am700-1.png", "/images/am700-2.png", "/images/am700-3.png"],
     kpi: [
@@ -129,20 +129,19 @@ export const products = [
     specs: {
       body: "AISI 430 / 2 мм",
       basketDiameter: "700 мм",
-      workHeight: "450 мм",
+      workHeight: "415 мм",
       basketLoad: "150 кг",
       pump: "2.2–3 бар • 90 л/мин • 0.5 кВт (1 шт.)",
       heater: "1 × 2 кВт",
       tankVolume: "60 л",
-      outerSize: "960×970×1210 мм",
-      lidOpenHeight: "1645 мм",
+      outerSize: "930×930×1130 мм",
+      lidOpenHeight: "1500 мм",
       weight: "115 кг",
       powerSupply: "220 / 380 В",
       drive: "Электромех. • 0.18 кВт (1 шт.)",
       totalPower: "2.7 кВт",
       ramp: "Да (2)",
       thermostat: "Да",
-      extra: "Опорные ролики для корзины — Да",
       lidSafety: "Да",
       dryRun: "Да",
       warranty: "12 месяцев",
@@ -156,7 +155,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM800",
     short: "Корзина Ø800 мм. Насос Pedrollo, повышенная производительность.",
-    price: "Цена: от 170 т.р.",
+    price: "Цена: от 190 т.р.",
     img: "/images/am800.png",
     images: ["/images/am800-1.png", "/images/am800-2.png", "/images/am800-3.png"],
     kpi: [
@@ -194,7 +193,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM1000",
     short: "Корзина Ø1000 мм. Для более габаритных деталей и узлов.",
-    price: "Цена: от 200т.р.",
+    price: "Цена: от 220т.р.",
     img: "/images/am1000.png",
     images: ["/images/am1000-1.png", "/images/am1000-2.png", "/images/am1000-3.png"],
     kpi: [
@@ -231,7 +230,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM1200",
     short: "Корзина Ø1200 мм. Два насоса, высокая грузоподъёмность.",
-    price: "Цена: 370 т.р.",
+    price: "Цена: 400 т.р.",
     img: "/images/am1200.png",
     images: ["/images/am1200-1.png", "/images/am1200-2.png", "/images/am1200-3.png"],
     kpi: [
@@ -269,7 +268,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM1500",
     short: "Корзина Ø1500 мм. Максимальная камера, высокая мощность и производительность.",
-    price: "Цена: 800 т.р..",
+    price: "Цена: 800 т.р.",
     img: "/images/am1500.png",
     images: ["/images/am1500-1.png", "/images/am1500-2.png", "/images/am1500-3.png"],
     kpi: [
@@ -302,14 +301,39 @@ export const products = [
     benefits,
   },
 
-  
+  // ultra100
+{
+  id: "ultra100",
+  categoryId: "ultrasonic",
+  title: "Ультразвуковая ванна 100 л",
+  short: "Промышленная ультразвуковая ванна объёмом 100 л с подогревом.",
+  price: "190 т.р.",
+  img: "/images/ultra130.png",
+  images: ["/images/ultra130.png", "/images/ultra130-1.png", "/images/ultra130-2.png", "/images/ultra130-3.png"],
+  specs: {
+    ultrasonicPower: "1500 Вт",
+    workingVolume: "100 л",
+    ultrasonicFrequency: "28 кГц",
+    heaterPower: "4 кВт",
+    timer: "до 60 мин",
+    powerSupply: "220 В",
+    basketInnerSize: "500×360×350 мм",
+    basketLoad: "80 кг",
+    material: "Нержавеющая сталь AISI 430, 2 мм",
+    temperatureControl: "Автоматическое поддержание температуры",
+    totalPowerConsumption: "5,5 кВт",
+  },
+  description: "Ультразвуковая ванна для очистки деталей.",
+  workflow: ultrasonicWorkflow,
+  benefits: ultrasonicBenefits,
+},
   // ultra130
   {
     id: "ultra130",
     categoryId: "ultrasonic",
     title: "Ультразвуковая ванна 130 л",
     short: "Промышленная ультразвуковая ванна объёмом 130 л с подогревом.",
-    price: "По запросу",
+    price: "240 т.р.",
     img: "/images/ultra130.png",
     images: ["/images/ultra130.png", "/images/ultra130-1.png", "/images/ultra130-2.png", "/images/ultra130-3.png"],
     specs: {
@@ -327,5 +351,30 @@ export const products = [
     benefits: ultrasonicBenefits,
   },
 
- 
+ // ultra220
+{
+  id: "ultra220",
+  categoryId: "ultrasonic",
+  title: "Ультразвуковая ванна 220 л",
+  short: "Промышленная ультразвуковая ванна объёмом 220 л с подогревом.",
+  price: "300 т.р.",
+  img: "/images/ultra130.png",
+  images: ["/images/ultra130.png", "/images/ultra130-1.png", "/images/ultra130-2.png", "/images/ultra130-3.png"],
+  specs: {
+    ultrasonicPower: "3000 Вт",
+    workingVolume: "220 л",
+    ultrasonicFrequency: "28 кГц",
+    heaterPower: "6 кВт",
+    timer: "до 60 мин",
+    powerSupply: "220 В",
+    basketInnerSize: "700×500×500 мм",
+    basketLoad: "80 кг",
+    material: "Нержавеющая сталь AISI 430, 2 мм",
+    temperatureControl: "Автоматическое поддержание температуры",
+    totalPowerConsumption: "6 кВт",
+  },
+  description: "Ультразвуковая ванна для очистки деталей.",
+  workflow: ultrasonicWorkflow,
+  benefits: ultrasonicBenefits,
+},
 ];

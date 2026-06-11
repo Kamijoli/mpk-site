@@ -31,7 +31,7 @@ function SpecTable({ specs }) {
     usage: "Применение",
     compatibility: "Совместимость",
     note: "Примечание",
-
+    temperatureControl: "Авто поддержание заданной температуры.",
     ultrasonicPower: "Мощность ультразвука",
     workingVolume: "Рабочий объём",
     ultrasonicFrequency: "Частота ультразвука",
@@ -42,6 +42,7 @@ function SpecTable({ specs }) {
     insulation: "Шумо- и теплоизоляция",
     material: "Материал",
     supports: "Опоры",
+    totalPowerConsumption: "Общее энергопотребление",
   };
 
 return (

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import ImageLightbox from "../components/ImageLightbox";
 
 const productionImages = [
+  "/images/production-3.jpg",
   "/images/production-1.jpg",
   "/images/production-2.jpg",
-  "/images/production-3.jpg",
 ];
 
 export default function About() {

@@ -59,10 +59,13 @@ a {
 }
 
 .headerLogoImg {
-  width: 92px;
-  height: 92px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
   display: block;
+
+  transform: scale(2);
+  transform-origin: center;
 }
 
 .nav {
