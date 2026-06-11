@@ -2295,3 +2295,18 @@ a {
     transform: scale(1.55);
   }
 }
+@media (max-width: 768px) {
+  .headerLogo {
+    width: 30px;
+    height: 30px;
+    flex: 0 0 40px;
+    pointer-events: none;
+  }
+
+  .headerLogoImg {
+    width: 40px;
+    height: 40px;
+    display: block;
+  }
+  
+}
