@@ -18,7 +18,7 @@ export default function Header() {
         </nav>
       </div>
 
-      <a className="phonePill" href="tel:+76990348003" aria-label="Позвонить">
+      <a className="phonePill" href="tel:+79150612211" aria-label="Позвонить">
         <span className="phoneIcon">📞</span>
         <span className="phoneText">
           <span className="phoneTop">ПОЗВОНИТЬ</span>
