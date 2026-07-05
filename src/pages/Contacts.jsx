@@ -22,7 +22,7 @@ export default function Contacts() {
     setStatus("loading");
 
     try {
-      const response = await fetch("https://formsubmit.co/ajax/werttzato@gmail.com", {
+      const response = await fetch("https://formsubmit.co/ajax/a.e.sizenev@yandex.ru", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

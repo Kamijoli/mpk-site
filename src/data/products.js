@@ -117,7 +117,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM700",
     short: "Корзина Ø700 мм, увеличенная высота камеры и бак 60 л.",
-    price: "Цена: 170 т.р.",
+    price: "Цена: 190 т.р.",
     img: "/images/am700.png",
     images: ["/images/am700-1.png", "/images/am700-2.png", "/images/am700-3.png", "/images/am700-4.png", "/images/am700-5.png", "/images/am700-6.png"],
     kpi: [
@@ -155,7 +155,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM800",
     short: "Корзина Ø800 мм. Насос Pedrollo, повышенная производительность.",
-    price: "Цена: от 190 т.р.",
+    price: "Цена: от 240 т.р.",
     img: "/images/am800.png",
     images: ["/images/am800-1.png", "/images/am800-2.png", "/images/am800-3.png", "/images/am800-4.png", "/images/am800-5.png", "/images/am800-6.png"],
     kpi: [
@@ -193,7 +193,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM1000",
     short: "Корзина Ø1000 мм. Для более габаритных деталей и узлов.",
-    price: "Цена: от 220т.р.",
+    price: "Цена: от 280т.р.",
     img: "/images/am1000.png",
     images: ["/images/am1000-1.png", "/images/am1000-2.png", "/images/am1000-3.png", "/images/am1000-4.png", "/images/am1000-5.png", "/images/am1000-6.png"],
     kpi: [
@@ -230,7 +230,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM1200",
     short: "Корзина Ø1200 мм. Два насоса, высокая грузоподъёмность.",
-    price: "Цена: 400 т.р.",
+    price: "Цена: 460 т.р.",
     img: "/images/am1200.png",
     images: ["/images/am1200-1.png", "/images/am1200-2.png", "/images/am1200-3.png", "/images/am1200-4.png", "/images/am1200-5.png", "/images/am1200-6.png"],
     kpi: [
