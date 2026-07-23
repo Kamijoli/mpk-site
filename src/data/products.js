@@ -79,7 +79,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM600",
     short: "Мойка деталей в корзине Ø600 мм. Подходит для сервисов и небольших производственных участков.",
-    price: "Цена: 130 т.р.",
+    price: "Цена: 136 т.р.",
     img: "/images/am600.png",
     images: ["/images/am600-1.png", "/images/am600-2.png", "/images/am600-3.png", "/images/am600-4.png", "/images/am600-5.png", "/images/am600-6.png"],
     kpi: [
@@ -155,7 +155,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM800",
     short: "Корзина Ø800 мм. Насос Pedrollo, повышенная производительность.",
-    price: "Цена: от 240 т.р.",
+    price: "Цена: 900  т.р.",
     img: "/images/am800.png",
     images: ["/images/am800-1.png", "/images/am800-2.png", "/images/am800-3.png", "/images/am800-4.png", "/images/am800-5.png", "/images/am800-6.png"],
     kpi: [
