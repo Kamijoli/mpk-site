@@ -79,7 +79,7 @@ export const products = [
     categoryId: "washers",
     title: "Автоматическая мойка AM600",
     short: "Мойка деталей в корзине Ø600 мм. Подходит для сервисов и небольших производственных участков.",
-    price: "Цена: 136 т.р.",
+    price: "Цена: 160 т.р.",
     img: "/images/am600.png",
     images: ["/images/am600-1.png", "/images/am600-2.png", "/images/am600-3.png", "/images/am600-4.png", "/images/am600-5.png", "/images/am600-6.png"],
     kpi: [
