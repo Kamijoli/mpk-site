@@ -89,7 +89,7 @@ export const products = [
       { label: "Питание", value: "220 В" },
     ],
     specs: {
-      body: "AISI 430 / 2 мм",
+      body: "AISI 304 / 2 мм",
       basketDiameter: "600 мм",
       workHeight: "370 мм",
       basketLoad: "120 кг",
@@ -127,7 +127,7 @@ export const products = [
       { label: "Питание", value: "220/380 В" },
     ],
     specs: {
-      body: "AISI 430 / 2 мм",
+      body: "AISI 304 / 2 мм",
       basketDiameter: "700 мм",
       workHeight: "415 мм",
       basketLoad: "150 кг",
@@ -165,7 +165,7 @@ export const products = [
       { label: "Мощность", value: "5.7 кВт" },
     ],
     specs: {
-      body: "AISI 430 / 2 мм",
+      body: "AISI 304 / 2 мм",
       basketDiameter: "800 мм",
       workHeight: "525 мм",
       basketLoad: "200 кг",
@@ -203,7 +203,7 @@ export const products = [
       { label: "Мощность", value: "7 кВт" },
     ],
     specs: {
-      body: "AISI 430 / 2 мм",
+      body: "AISI 304 / 2 мм",
       basketDiameter: "1000 мм",
       workHeight: "635 мм",
       basketLoad: "300 кг",
@@ -240,7 +240,7 @@ export const products = [
       { label: "Мощность", value: "9.6 кВт" },
     ],
     specs: {
-      body: "AISI 430 / 2 мм",
+      body: "AISI 304 / 2 мм",
       basketDiameter: "1200 мм",
       workHeight: "700 мм",
       basketLoad: "550 кг",
@@ -278,7 +278,7 @@ export const products = [
       { label: "Мощность", value: "15.7 кВт" },
     ],
     specs: {
-      body: "AISI 430 / 2 мм",
+      body: "AISI 304 / 2 мм",
       basketDiameter: "1500 мм",
       workHeight: "800 мм",
       basketLoad: "650 кг",
