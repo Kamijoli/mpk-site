@@ -68,11 +68,7 @@ export default function Contacts() {
           <h3 className="contactCardTitle">Связаться напрямую</h3>
 
           <div className="contactList">
-            <a className="contactItem" href="tel:+76990348003">
-              <span className="contactLabels">Алексей Евгеньевич</span>
-              <span className="contactLabel">Отдел продаж / работа с клиентами</span>
-              <span className="contactValue">+7 915 06 122 11</span>
-            </a>
+    
 
           <div className="contactList">
             <a className="contactItem" href="tel:+76990348003">
